@@ -1,12 +1,12 @@
 *.tar.gz
 
 *.exe
-src/straks
-src/straksd
-src/straks-cli
-src/straks-tx
-src/test/test_straks
-src/qt/test/test_straks-qt
+src/Milenium
+src/Mileniumd
+src/Milenium-cli
+src/Milenium-tx
+src/test/test_Milenium
+src/qt/test/test_Milenium-qt
 
 squbs
 libtool
@@ -17,8 +17,8 @@ autom4te.cache/
 config.log
 config.status
 configure
-src/straks-config.h
-src/straks-config.h.in
+src/Milenium-config.h
+src/Milenium-config.h.in
 src/build-aux/
 src/stamp-h1
 share/setup.nsi
@@ -46,7 +46,7 @@ src/.libs
 *.o
 *.o-*
 *.patch
-.straks
+.Milenium
 *.a
 *.pb.cc
 *.pb.h
@@ -61,12 +61,12 @@ src/.libs
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-straks-qt
-Straks-Qt.app
+Milenium-qt
+Milenium-Qt.app
 
 # Unit-tests
 Makefile.test
-straks-qt_test
+Milenium-qt_test
 
 # Resources cpp
 qrc_*.cpp
@@ -86,7 +86,7 @@ build
 #lcov
 *.gcno
 /*.info
-test_straks.coverage/
+test_Milenium.coverage/
 total.coverage/
 coverage_percent.txt
 
@@ -94,7 +94,7 @@ coverage_percent.txt
 linux-coverage-build
 linux-build
 win32-build
-qa/pull-tester/run-straksd-for-test.sh
+qa/pull-tester/run-Mileniumd-for-test.sh
 qa/pull-tester/build-tests.sh
 
 !src/leveldb*/Makefile
@@ -108,7 +108,7 @@ qa/pull-tester/build-tests.sh
 src/consensus/*.lo
 src/crypto/Lyra2RE/*.lo
 src/crypto/*.lo
-src/libstraksconsensus.la
+src/libMileniumconsensus.la
 src/*.lo
 src/primitives/*.lo
 src/script/*.lo
