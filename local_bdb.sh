@@ -1,9 +1,9 @@
 #!/bin/bash
 
-STRAKS_ROOT=$(pwd)
+Milenium_ROOT=$(pwd)
 
-# Pick some path to install BDB to, here we create a directory within the straks directory
-BDB_PREFIX="${STRAKS_ROOT}/db4"
+# Pick some path to install BDB to, here we create a directory within the Milenium directory
+BDB_PREFIX="${Milenium_ROOT}/db4"
 mkdir -p $BDB_PREFIX
 
 # Fetch the source and verify that it is not tampered with
@@ -19,5 +19,5 @@ cd db-4.8.30.NC/build_unix/
 make install
 
 # Configure Core to use our own-built instance of BDB
-cd $STRAKS_ROOT
+cd $Milenium_ROOT
 ./configure LDFLAGS="-L${BDB_PREFIX}/lib/" CPPFLAGS="-I${BDB_PREFIX}/include/"
